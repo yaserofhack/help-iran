@@ -5,6 +5,9 @@ resolve = string.gsub(resolve,'@GPMod','')
 return resolve
 end
 return {
-   patterns = {"^[/!]time$"},
+   patterns = {
+      "^[/!#@]time$",
+      "^ساعت$"
+      },
    run = run
 }
