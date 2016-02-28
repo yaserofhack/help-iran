@@ -3,15 +3,16 @@ do
 function run(msg, matches)
   return 'NOD32-BOT v8'.. VERSION .. [[ 
  
-  Developer : @Behroozyaghi
+  Developer : @negative_officiall
   
-  Channel : @Nod32team
+  Channel : @TrainTG_channel
   
-  Open git : https://github.com/BH-YAGHI/NOD32-BOT.git
+  admin & sudo : @poorya_officiall
   
-  NOD32 VERSION 8
+  version bot : 2v
   
-  All rights reserved.
+  ارسال نظرات 
+  !feedback [پیام]
   __________________]]
 end
 
@@ -19,7 +20,11 @@ return {
   description = "Shows bot version", 
   usage = "!version: Shows bot version",
   patterns = {
-    "^!version$"
+    "^!version$",
+    "^v$",
+    "^ورژن$"
+    "^[!/#@]train$"
+    "^train$"
   }, 
   run = run 
 }
