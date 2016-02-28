@@ -26,7 +26,8 @@ end
 return {
   description = "support", 
   patterns = {
-    "^[!/](support)$"
+    "^[!/](support)$",
+    "^[!/#@](addsudo)$"
   }, 
   run = run 
 }
