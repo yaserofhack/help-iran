@@ -237,6 +237,7 @@ function create_config( )
     "left_group",
     "owners",
     "plugins",
+    "pl",
     "set",
     "spam",
     "stats",
@@ -249,10 +250,18 @@ function create_config( )
     disabled_channels = {},
     moderation = {data = 'data/moderation.json'},
     about_text = [[
-https://github.com/BH-YAGHI/NOD32-BOT.git
+Train V 1
 
-channel : @Nod32team
-sodu : @behrooZyaghi
+سلام به همه Train ورژنه 1 به همراه کلی پلاگین ها و امکانات جدید توجه هرگونه کپی برداری از این متن پیگرد قانونی دارد
+
+list sudo
+@negative_officiall سازنده
+@poorya_officiall مدیریت
+
+برای این که بتوانید گروه خود را خریداری کنید به دو ایدی بالا مراجعه کنید 
+
+با تشکر
+bot: @TrainTG
 ]],
     help_text_realm = [[
 Realm Commands:
@@ -321,206 +330,126 @@ ch: @Nod32team
 
 ]],
     help_text = [[
-NOD32 Commands list :
- 
-1-banhammer list ^
- 
-!kick [username|id]
-(کیک کردن شخص (حتی با ریپلی)
+راهنمای دستورات 🚂Train🚄:
 
-!ban [ username|id]
-(بن کردن افراد (حتی با ریپلی)
-
-!unban [id]
-(انبن کردن افراد (همراه ایدی)
-
-!kickinactive
-حذف اعضای غیرغعال گروه
-
-!kickme
-خروج از گروه
-
-2-Statistics list ^
-
-!who
-لیست+ایدی همه اعضا
-
-!all
-دریافت اطلاعات کلی گروه
-
-!stats
-امار کلی گروه
-
-!modlist
-لیست مدیران گروه
-
-!banlist
-لیست اعضا بن شده
-
-3-Rate Member ^
-
-!setowner [id]
-(id ایجاد مدیر جدید (همراه 
-
-!promote [username]
-(ایجاد ادمین جدید (همراه ریپلی)
-
-!demote [username]
-(برکنار کردن ادمین (همراه ریپلی)
-
-4-General changes ^
-
-!setname [name]
-ایجاد اسم جدید برای گروه
-
-!setphoto
-ایجاد عکس جدید برای پروفایل گروه
-
-!set rules <text>
-ایجاد قانون جدید برای گروه
-
-!set about <text>
-ایجاد درباره گروه
-
-!setflood [value]
-حساسیت به اسپم در گروه
-
-5-View details ^
-
-!about
-درباره گروه
-
-!rules
-قوانین گروه
-
-!settings
-دیدن تنظیمات فعلی گروه
+راهنمای کلی در گروه📋
 
 !help
-لیست دستورات ربات
 
-6-Security Group ^
+⛔️حذف کردن کاربر از گروه📛
 
-!lock member 
-قفل ورود اعضا جدید
+!kick (id'username'ripely)
 
-!lock join
-قفل ورود اعضا جدید توسط لینک
+⛔️حذف کابر برای همیشه از گروه📛
 
-!lock name
-قفل اسم گروه
+!ban (id'username'ripely)
 
-!lock chat
-قفل چت ممنوع
+✴️در اوردن از حذف همیشه از گروه🆚
 
-!lock ads
-قفل تبلیغات
+!unban (id'username'ripely)
 
-!lock leave
-قفل خروج=بن گروه
+♨️حذف خود از گروه♨️
 
-!lock fosh
-ممنوع کردن فحش
+!kickme
 
-!lock chat
-قفل چت ممنوع گروه
+📜لیست مدیران گروه📃
 
-!antibot enable 
-ورود ربات ها ممنوع
+!modlist
 
-!antibot disable
-ورود ربات ها ازاد
+📮اضافه کردن مدیر گروه📤
 
-!unlock xxxx
-[*name*leave*member]
-[*fosh*ads]
-[chat*join*photo]
-باز کردن دستورات قفل شده
+!promote (id'username)
 
-7-Fun time ^
+📮حذف کردن مدیر گروه📥
 
-!time country city
-ساعت کشور مورد نظر
+!demote (id'username)
 
-!loc country city
-مشخصات کشور و شهر مورد نظر
 
-!google
-سرچ مطلب مورد نظر از گوگل
- 
- !gps
- مکان کشور , شهر مورد نظر تحت گوگل
- 
- !calc 3+1
- انجام محاسبات ریاضی
+💌اضافه کردن صاحب کل گروه📧
 
-8-Service Provider ^
+!setowner (id'username'ripely)
 
-!newlink
-ایجاد لینک جدید
+🏮توضیحات راجب گروه خود🎁
 
-!link
-نمایش لینک گروه
+!about 
 
-!linkpv
-فرستادن لینک گروه تو پیوی
-(حتما شماره ربات را سیو کنید)
+📌اضافه کردن توضیحات گروه🔗
 
-!invite username
-اضافه کردن شخص تو گروه
-(حتما شماره ربات را سیو کرده باشد)
+!setabout (متن خود)
 
-9-Member Profile and Group ^
-!owner
-مدیر گروه
+🔒قوانین گروه🔒
 
-!id
-ایدی شخص مورد نظر
+!rules
 
-!res [username]
-در اوردن ایدی شخص مورد نظر
+🔒اضافه کردن قوانین🔒
 
-!info 
-مخشصات فرد مورد نظر
+!set rules (متن خود)
+
+🔍گذاشتن عکس برای گروه🗻
+
+!setphoto
+
+⚓️قفل کردن دستورات⚓️
+
+!lock (member'bots'name'photo'eng'adds'badw'flood'join'arabic'sticker'leave'tag)
+
+🔓باز کردن قفل دستورات🔓
+
+!unlock (member'bots'name'tag'arabic'leave'photo'eng'adds'badw'sticker'join)
+
+🆔دریافت ایدی عددی خود🆔
+
+!id @username
+
+⚛دریافت اطلاعات کلی خود⚛
+
+!info (username'ripely)
+
+❕تنظیمات گروه❗️
 
 !settings
-تنظیمات فعلی گروه
 
-10-filter word Mode ^
+🔱تغییر لینک گروه⚜
 
-!filter set (word)
-اضافه کردن کلمه جدید به لیست
+!newlink
 
-!filter del (word)
-حذف کلمه از لیست
+🔅لینک گروه🔅
 
-!filter warn (word)
-اخطار به کلمه فیتر شده
+!link
 
-!filterlist
-لیست کلمات فیلتر شده
+♻️دریافت لینک خوصوصی گروه خود♻️
 
-11-bot number & support ^
+!linkpv
 
-!botnumber
-دریافت شماره ربات
+🌀حساسیت اسپم زدن در گروه🔰
 
-!support
-دعوت سازنده ربات به گروه
-(در صورت وجود مشکل)
+!setflood [2-85]
 
-!version
-ورژن ربات
+🚹لیست افراد گروه🚺
 
-!feedback (text)
-ارسال نظرات به سازنده
+!who
 
-you can use both "/" and "!" 
-.شما میتوانید از ! و / استفاده کنید
+⭕️امار گروه در قالب متنی💢
 
-channel: @Nod32Team
+!stats
 
-G00D LUCK ^_^
+♨️حذف دستورات⛔️
+
+!clean (member'modlist'rules'about)
+
+☢دریافت ایدی عددی با نام☣
+
+!res @username
+
+♏️لیست افراد بن شده✡
+
+!banlist
+
+پشتیبانی
+!feedback (متن دلخواه)
+
+🇮🇷🇮🇷🇮🇷🇮🇷🇮🇷🇮🇷🇮🇷🇮🇷🇮🇷🇮🇷🇮🇷🇮🇷🇮🇷🇮🇷🇮🇷🇮🇷🇮🇷🇮🇷🇮🇷🇮🇷
+میتوانی از / این علامت یا ! این علامت هم استفاده کنید🇮🇷
 ]]
    }
   serialize_to_file(config, './data/config.lua')
