@@ -1,7 +1,7 @@
 do
 
 function run(msg, matches)
-  return 'NOD32-BOT v8'.. VERSION .. [[ 
+  return 'Train version 2'.. VERSION .. [[ 
  
   Developer : @negative_officiall
   
